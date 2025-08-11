@@ -1,6 +1,6 @@
 package ej;
 
-public class Bloc {
+public abstract class Bloc {
     
     protected int longueur;
     protected int largeur;
