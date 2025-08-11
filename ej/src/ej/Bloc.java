@@ -2,17 +2,30 @@ package ej;
 
 public class Bloc {
 
-    String description;
+    private int largeur;
+    private int hauteur;
+    private int longueur;
 
-    Bloc() {
-        this.description = "Ceci est un bloc du jeu Epicraft’s Journey";
+    Bloc(int longueur,int largeur,int hauteur) {
+		this.longueur = longueur;
+		this.largeur = largeur;
+		this.hauteur = hauteur;
+    }
+
+    
+    int getLargeur() {
+    	return this.largeur;
+    }    
+    int getLongeur() {
+    	return longueur;
     }
     
-    void setTestDescription() {
-        this.description = "Test git";
+    int getHauteur() {
+    	return hauteur;
     }
-
-    void afficherDescription() {
-        System.out.println(this.description);
+    
+    int setLargeur(int largeur) {
+    	return this.largeur = largeur;
     }
+   
 }
